@@ -23,19 +23,19 @@ span:hover{
 
 header{
    background-image:url("https://media.infocielo.com/p/89089910b42b0ecd94096d2b76f7efdb/adjuntos/299/imagenes/001/406/0001406156/brahian-aleman-gol-gimnasiajpg.jpg") ;
-   background-image: linear-gradient(0, 0, 0, 0.5);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
-   
+   padding: 50px;
+   text-align: center;   
 }
 
 
 footer{
    padding: 20px;
    text-align: center;
-   background-color: black;
-   color: aliceblue; 
+   background-color: #d3d3d3;
+   color: black; 
    text-align: center;
 }
 figure{
@@ -59,7 +59,7 @@ blockquote{
 
 .border{
    border: solid 1px white;
-   background-color: rgb(13, 29, 97);
+   background-color: #d3d3d3;
    
 }
 
@@ -107,7 +107,7 @@ aside {
    }
    
 article{
-   background-color: wheat;
+   background-color: rgb(26, 25, 25);
    border-radius: 4px;
    margin: 5px;
    text-align: center;
@@ -157,7 +157,7 @@ article p{
 
 @media (min-width: 481px) and (max-width:1023px){
    body{
-      background-color: rgb(205, 133, 50);
+      background-color: rgb(145, 143, 141);
    }
 
    header{
@@ -312,5 +312,15 @@ article p{
 }
 
 
+.transicion{
+   transition: all 2s;
+}
 
+.transicion:hover{
+  transform: scale(1.5, 1.5);
+   background-color: blue;
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT78ub9i1-s8Zl4dB1t1Q7ikYh8Jhmw8kXeaA&usqp=CAU);
+   background-size: cover;
+   
+}
 
