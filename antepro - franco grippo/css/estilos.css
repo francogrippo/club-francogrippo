@@ -1,0 +1,316 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+   box-sizing: border-box;   
+}
+
+body{
+   width: 100%;
+   height: 100vh;
+}
+
+span{
+   background-color: white;
+   margin: 5px;
+   padding: 10px;   
+}
+
+span:hover{
+   border-left: solid 10px blue;
+}
+
+header{
+   background-image:url("https://media.infocielo.com/p/89089910b42b0ecd94096d2b76f7efdb/adjuntos/299/imagenes/001/406/0001406156/brahian-aleman-gol-gimnasiajpg.jpg") ;
+   background-image: linear-gradient(0, 0, 0, 0.5);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   
+}
+
+
+footer{
+   padding: 20px;
+   text-align: center;
+   background-color: black;
+   color: aliceblue; 
+   text-align: center;
+}
+figure{
+   padding: 10px;
+}
+ img{
+   border-radius: 50%;
+   box-shadow: 2px 2px 5px rgb(70, 69, 69);
+   width: 100%;
+}
+figcaption{
+   text-align: right;
+   font-size: 0.65rem;
+}
+blockquote{
+   margin: 20px;
+   font-size: 1.5rem;
+   font-family: serif;
+   text-align: justify;
+}
+
+.border{
+   border: solid 1px white;
+   background-color: rgb(13, 29, 97);
+   
+}
+
+.videoIframe{
+   position: relative;
+   top: 0%;
+   left: 0%;
+   width: 100%;
+   height: 0%;
+   padding-top: 56.25%;
+   margin-left: 10px;
+   margin-right: 10px;
+
+}
+.galeriaflex{
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-evenly;
+}
+
+header {
+   grid-area: cabeza;
+}
+footer {
+   grid-area: pie;
+}
+#productos {
+   grid-area: productos;     
+}
+#servicios {
+   grid-area: servicios;     
+}
+nav {
+   grid-area: menu;
+}
+aside {
+   grid-area: brazo;
+}
+
+
+@media (max-width: 480){
+   h1{
+      font-size: 2rem; 
+      color: whitesmoke;
+   }
+   
+article{
+   background-color: wheat;
+   border-radius: 4px;
+   margin: 5px;
+   text-align: center;
+}
+
+h3{
+   margin: 7px;
+   text-transform: uppercase;   
+}
+
+article img{
+   box-shadow: 2px 2px 2px #f3f3f3;
+}
+
+article p{
+   text-align: justify;
+   margin: 10px;   
+
+}
+#grilla-areas{
+   display: grid;
+   grid-template-areas: 
+   "menu"
+   "cabeza"
+   "productos"
+   "brazo"
+   "servicios"
+   "pie"
+  ;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 2fr 3fr 1fr 2fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}  
+
+.menuFlex{
+   display: flex;
+   flex-flow: column nowrap;
+   background-color: black;
+}
+
+.flexProductos{
+   display: flex;
+   flex-flow: column nowrap;
+}
+}
+
+@media (min-width: 481px) and (max-width:1023px){
+   body{
+      background-color: rgb(205, 133, 50);
+   }
+
+   header{
+      height: 25vh;
+      background-color: aqua;
+   }
+
+h1{
+   font-size: 3rem; 
+   color: whitesmoke;
+}
+span{
+   padding: 10px 40px;   
+}
+article{
+   background-color: wheat;
+   border-radius: 4px;
+   margin: 5px;
+   text-align: center;
+
+}
+
+h3{
+   margin: 7px;
+   text-transform: uppercase;   
+}
+
+article img{
+   box-shadow: 2px 2px 2px #f3f3f3;
+}
+
+article p{
+   text-align: justify;
+   margin: 10px;   
+
+}
+
+h2{
+   margin: 4px;
+   text-transform: uppercase;   
+   color: black;
+}
+aside, ol, ul, li {
+   margin: 4px;
+   padding: 4px;
+   text-align: center;
+   color: aliceblue;
+   
+}
+
+   #grilla-areas{
+      display: grid;
+      grid-template-areas: 
+      "cabeza cabeza"
+      "menu menu"
+      "productos brazo"
+      "servicios brazo"
+      "pie pie"
+     ;
+     grid-template-columns: 50%  50%;
+     grid-template-rows: 3fr 1fr 3fr 2fr 1fr ;
+     grid-column-gap: 5px;
+     grid-row-gap: 15px;
+   }
+   .menuFlex{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+   }
+   
+   .flexProductos{
+      display: flex;
+      flex-flow: row wrap;
+   }
+}
+
+ @media (min-width: 1024px){
+
+   body{
+      background-color: #d3d3d3;
+   }   
+
+
+#grilla-areas{
+   display: grid;
+   grid-template-areas: 
+   "menu cabeza cabeza"
+   "menu productos brazo"
+   "menu servicios brazo"
+   "menu pie pie"
+  ;
+  grid-template-columns: 15% auto 20%;
+  grid-template-rows: 2fr 3fr 2fr 1fr ;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+}
+
+h1{
+   font-size: 5rem; 
+   color: whitesmoke;
+}
+
+article{
+   background-color: wheat;
+   border-radius: 4px;
+   margin: 5px;
+   text-align: center;
+
+}
+
+h2{
+   margin: 4px;
+   text-transform: uppercase;   
+   color: black;
+}
+aside, ol, ul, li {
+   margin: 4px;
+   padding: 4px;
+   text-align: center;
+   color: aliceblue;
+   
+}
+
+h3{
+   margin: 7px;
+   text-transform: uppercase;   
+   color: white;
+}
+
+article img{
+   box-shadow: 2px 2px 2px #f3f3f3;
+}
+
+article p{
+   text-align: justify;
+   margin: 10px;   
+
+}
+
+
+
+.menuFlex{
+   display: flex;
+   flex-flow: column nowrap;
+}
+
+.flexProductos{
+   display: flex;
+   flex-flow: row nowrap;
+}
+
+}
+
+
+
+
